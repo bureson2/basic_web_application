@@ -1,0 +1,120 @@
+*{
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: white !important;
+	color: black;
+}
+
+header, footer, aside{
+	display: none;
+}
+
+
+form{
+	display: none;
+}
+
+main{
+	border-right: 1px black solid;
+}
+
+.divide{
+	border-left: 1px black solid;
+}
+
+.moveBar{
+	padding: 0 2em;
+	background-image: url("../images/wp3591173.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #d6c90d;
+	border-bottom: 1px black solid;
+	text-align: center;
+	color: white;
+}
+
+.moveBar a{
+    text-decoration: none;
+    border: solid 2px black;
+    background-color: black;
+    padding-right: 2em;
+    padding-left: 2em;
+    color: white;
+}
+
+.moveBar a:hover{
+    background-color: #d6c90d;
+}
+
+.horizontal-align{
+	display: inline-block;
+	vertical-align: middle;
+	height: auto;
+	box-sizing: border-box;	
+}
+
+.nextTo {
+	display: inline-block; 
+}
+
+.map{
+	margin-right: 1em;
+	margin-bottom: 2em;
+}
+
+.adress {
+	padding: 0 0 0 2em;
+}
+
+.media {
+	padding: 1em 0 1em 0;
+}
+
+footer{
+	clear: both;
+    clear: both;
+    text-align: center;
+    background-color: black;
+}
+
+.strong{
+    font-weight:bold;
+}
+
+.footNav li a{
+    color: white;
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-decoration: none;
+    font-family: "calibri";
+}
+
+table{
+	border: 2px black solid;
+	border-radius: 6px;
+	padding: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 0.5em;
+}
+
+td{
+	border: 1px black solid;
+	padding: 0.8em 1.2em;
+}
+
+th{
+	font-size: 1.2em;
+}
+
+.numbers{
+	margin-bottom: 1em;
+}
+
+
+

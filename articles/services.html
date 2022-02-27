@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Salón-výšivky</title>
+        <link type="text/css" rel="stylesheet" href="../css/style.css">
+		<link type="text/css" rel="stylesheet" href="../css/style-print.css" media="print">
+    </head>
+
+    <body>
+        <header>
+            <nav class="mainNav">
+                <ul>
+					<li><img class="horizontal-align" src="../images/logo.png" alt="logo salónu"></li>
+                    <li><a class="horizontal-align" href="../index.html">O nás</a></li>
+                    <li><a class="active horizontal-align" href="services.html">Služby a ceník</a></li>
+                    <li><a class="horizontal-align" href="galery.html">Galerie</a></li>
+                    <li><a class="horizontal-align" href="contact.html">Kontakt</a></li>
+                    <li><a class="horizontal-align" href="reference.html">Reference</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="topic">
+            <section>
+                <h1>Služby</h1>
+                <div class="inside">
+					<p class="strong">Vyšijeme Vám dle přání: </p>
+					<ul>
+						<li>Na bytové doplňky (ubrusy, závěsy, polštáře, ručníky)</li>
+						<li>Na oděvy (šaty, halenky)</li>
+						<li>Firemní loga</li>
+					</ul>
+                </div>
+				<div class="inside">
+					<p class="strong">Ušijeme Vám na míru: </p>
+					<ul>
+						<li>Kalhoty</li>
+						<li>Košile</li>
+						<li>Šaty</li>
+						<li>Halenky</li>
+						<li>Sukně</li>
+						<li>Saka</li>
+					</ul>
+                </div>
+                <p class="strong">Nabízíme: </p>
+                <ul>
+                    <li>Ušití modelů s výšivkou</li>
+                    <li>Expresní služby (tentýž den, do druhého dne)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>Objednávka</h1>
+				<br />
+                <form>
+                        <fieldset>
+                            <legend>Fakturační údaje</legend>
+                            <p>
+                                <label>Jméno:
+                                    <input type="text" name="name1" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{2,15}" >
+                                </label>
+                
+                                <label>Příjmení:
+                                    <input type="text" name="surname1" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{2,15}">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Společnost:
+                                    <input type="text" name="company" size="50" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó,. ]{2,15}">
+                                </label>
+                            </p>
+                            <p>
+                                <label>IČ:
+                                    <input type="text" name="ic" pattern="[0-9]{8}">
+                                </label>
+                
+                                <label>DIČ:
+                                    <input type="text" name="dic" pattern="[0-9]{8}">
+                                </label>
+                            </p>
+                            <p>
+                                <label>Ulice a č.p.:
+                                    <input type="text" name="street1" pattern="[A-Za-z0-9ěĚšŠčČřŘžŽýÝáÁíÍéÉÓó,]{8, 25}">
+                                </label>
+                
+                                <label>Město / Obec:
+                                    <input type="text" name="city1" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{3,20}">
+                                </label>
+                            </p>
+                            <p>
+                                <label>PSČ:
+                                    <input type="text" name="psc1" pattern="[0-9]{5}">
+                                </label>
+                
+                                <label>Země:
+                                    <input type="text" name="country1" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{3,20}">
+                                </label>
+                            </p> 
+                        </fieldset>
+                        <fieldset>
+                            <legend>Adresa pro doručení</legend> 
+                            <p>
+                                <label><span class="red">*</span>Jméno:
+                                    <input type="text" name="name2" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó]{2,15}" required>
+                                </label>
+                
+                                <label><span class="red">*</span>Příjmení:
+                                    <input type="text" name="surname2" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{2,15}" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label><span class="red">*</span>Email:
+                                    <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$" required>
+                                </label>
+                
+                                <label><span class="red">*</span>Telefon:
+                                    <input type="text" name="phone" pattern="[0-9]{9}" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label><span class="red">*</span>Ulice a č.p.:
+                                    <input type="text" name="street2" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{8, 25}" required>
+                                </label>
+                
+                                <label><span class="red">*</span>Město / Obec:
+                                    <input type="text" name="city2" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{2,20}" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label><span class="red">*</span>PSČ:
+                                    <input type="text" name="psc2" pattern="[0-9]{5}" required>
+                                </label>
+                
+                                <label><span class="red">*</span>Země:
+                                    <input type="text" name="country2" pattern="[A-Za-zěĚšŠčČřŘžŽýÝáÁíÍéÉÓó ]{3,20}" required>
+                                </label>
+                            </p>
+                        </fieldset>
+						<fieldset>
+						<legend>Informace k objednávce</legend> 
+							<p>
+								<span class="red">*</span><br />
+								<textarea name="order" rows="12" cols="60" title="Napište nám, co si přejete objednat." required></textarea>
+								</label>
+							</p>
+						</fieldset>
+                        <input class="submit" type="submit" name="send" value="Odeslat">
+                </form>
+            </section>
+			<script src="../js/validateService.js"></script>
+            
+        </main>
+
+        <aside>
+            <h2>Navštivte také</h2>
+            <a href="http://www.okstavby.cz/" target="_blank"><img src="../images/okstavby.png" alt="logo společnosti ok stavby"></a>
+            <a href="https://www.facebook.com/darekjakovysity/" target="_blank"><img src="../images/darekjakovysity.png" alt="logo společnosti dárek jako vyšitý"></a>
+            <a href="https://www.penzion-berany.cz/" target="_blank"><img src="../images/berany.jpg" alt="náhledový obrazek nezionu Berany"></a>
+			<a href="https://praguecycleboat.com/" target="_blank"><img src="../images/cycleboat.jpg" alt="logo společnosti Prague cycle boat"></a>
+			<a href="http://okdlazby.cz/" target="_blank"><img src="../images/okdlazby.png" alt="logo společnosti OK Dlažby"></a>
+		</aside>
+
+        <footer>
+            <nav class="footNav">
+                <ul>
+                    <li><a href="../index.html">O nás</a></li>
+                    <li><a href="services.html">Služby a ceník</a></li>
+                    <li><a href="galery.html">Galerie</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+				<a href="https://www.instagram.com/darek_jako_vysity/?hl=cs"><img class="social" src="../images/ig.png" alt="instagram logo"></a>
+				<a href="https://www.facebook.com/darekjakovysity/"><img class="social" src="../images/fb.png" alt="facebook logo"></a>	
+            </nav>
+        </footer>
+
+    </body>
+</html>
